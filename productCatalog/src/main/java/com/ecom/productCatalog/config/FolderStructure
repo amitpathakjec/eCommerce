@@ -1,0 +1,18 @@
+ecommerce-app/
+├── src/
+│   ├── main/
+│   │   ├── java/com/example/ecommerce/
+│   │   │   ├── config/           // Security & web config
+│   │   │   ├── controller/       // Web and REST controllers
+│   │   │   ├── model/            // Entities (Product, User, Category, Cart, Wishlist, Order, etc.)
+│   │   │   ├── repository/       // Spring Data JPA repositories
+│   │   │   ├── service/          // Business logic
+│   │   │   └── EcommerceApplication.java
+│   │   └── resources/
+│   │       ├── static/           // Static resources (css, js, images)
+│   │       ├── templates/        // Thymeleaf templates
+│   │       ├── application.properties
+│   │       └── data.sql          // Demo data
+│   └── test/
+│       └── java/com/example/ecommerce/
+├── pom.xml

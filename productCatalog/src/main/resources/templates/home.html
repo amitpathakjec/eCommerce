@@ -1,0 +1,84 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>Product Catalog</title>-->
+<!--    <style>-->
+<!--        body {-->
+<!--            font-family: Arial, sans-serif;-->
+<!--            padding: 20px;-->
+<!--            background-color: #f8f9fa;-->
+<!--        }-->
+
+<!--        h1 {-->
+<!--            text-align: center;-->
+<!--            color: #333;-->
+<!--        }-->
+
+
+<!--        .container {-->
+<!--            display: flex;-->
+<!--            flex-wrap: wrap;-->
+<!--            gap: 20px;-->
+<!--            justify-content: center;-->
+<!--        }-->
+
+<!--        .product {-->
+<!--            background-color: #fff;-->
+<!--            border: 1px solid #ddd;-->
+<!--            border-radius: 8px;-->
+<!--            padding: 15px;-->
+<!--            width: 280px;-->
+<!--            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);-->
+<!--            transition: transform 0.2s;-->
+<!--        }-->
+
+<!--        .product:hover {-->
+<!--            transform: scale(1.02);-->
+<!--        }-->
+
+<!--        .product img {-->
+<!--            width: 100%;-->
+<!--            height: auto;-->
+<!--            border-radius: 4px;-->
+<!--            margin-bottom: 10px;-->
+<!--        }-->
+
+<!--        .product h2 {-->
+<!--            margin-top: 0;-->
+<!--            font-size: 1.2em;-->
+<!--            color: #444;-->
+<!--        }-->
+
+<!--        .product p {-->
+<!--            margin: 5px 0;-->
+<!--            color: #555;-->
+<!--        }-->
+
+<!--        .price {-->
+<!--            font-weight: bold;-->
+<!--            color: #2a9d8f;-->
+<!--        }-->
+
+<!--        .stock {-->
+<!--            font-size: 0.9em;-->
+<!--            color: #666;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<h1>All Products</h1>-->
+
+<!--<div class="container">-->
+<!--    <div th:each="product : ${products}" class="product">-->
+<!--        <img th:src="${product.imageUrl}" th:alt="${product.name}" />-->
+<!--        <h2 th:text="${product.name}">Product Name</h2>-->
+<!--        <p th:text="${product.description}">Description</p>-->
+<!--        <p class="price">₹<span th:text="${product.price}">0.00</span></p>-->
+<!--        <p class="stock">Stock: <span th:text="${product.stockQuantity}">0</span></p>-->
+<!--        <p>Category: <span th:text="${product.category.name}">Category</span></p>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->
