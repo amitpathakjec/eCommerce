@@ -11,7 +11,7 @@ This repository hosts a full-stack, web-based eCommerce application designed for
 - **Admin Dashboard:** Admin users have oversight on users, products, and orders, with capabilities for moderation and analytics.
 - **Secure Payments:** Integration with a payment gateway to handle secure online transactions (can be stubbed or mocked in development).
 - **Responsive Frontend:** The UI is built with Thymeleaf (or React/Angular, if applicable), providing a user-friendly experience across devices.
-- **Database Integration:** Uses a relational database (e.g., MySQL or PostgreSQL) with JPA/Hibernate for data persistence.
+- **Database Integration:** Uses a relational database (PostgreSQL) with JPA/Hibernate for data persistence.
 - **Exception Handling & Validation:** Robust error handling and input validation throughout the application.
 - **Testing:** Includes unit and integration tests for APIs and business logic.
 
@@ -34,6 +34,4 @@ This repository hosts a full-stack, web-based eCommerce application designed for
 
 Pull requests and suggestions are welcome. Please open an issue to discuss changes before submitting a PR.
 
----
 
-**Note:** Replace specifics above (like frontend tech, DB, etc.) with your actual stack if different.
