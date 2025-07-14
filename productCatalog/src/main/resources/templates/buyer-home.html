@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Buyer Home - eCommerce</title>
+    <link rel="stylesheet" th:href="@{/css/buyer-home.css}"/>
+</head>
+<body>
+<nav class="nav-bar">
+    <span class="site-title">eCommerce</span>
+    <span class="user-welcome">Welcome, <b th:text="${username}"></b>!</span>
+    <a th:href="@{/cart}" class="nav-link">Cart</a>
+    <a th:href="@{/wishlist}" class="nav-link">Wishlist</a>
+    <a th:href="@{/logout}" class="nav-link">Logout</a>
+</nav>
+<div class="container">
+    <h2>All Products</h2>
+    <div class="product-list">
+        <div th:each="product : ${products}" class="product-card">
+            <div class="product-info">
+                <h3 th:text="${product.name}"></h3>
+                <p th:text="${product.description}"></p>
+                <div class="category" th:text="'Category: ' + ${product.category.name}"></div>
+                <div class="price" th:text="'₹' + ${product.price}"></div>
+            </div>
+            <div class="product-actions">
+                <form th:action="@{|/cart/add/${product.id}|}" method="post" style="display:inline;">
+                    <button type="submit" class="action-btn">Add to Cart</button>
+                </form>
+                <form th:action="@{|/wishlist/add/${product.id}|}" method="post" style="display:inline;">
+                    <button type="submit" class="action-btn wish-btn">Add to Wishlist</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

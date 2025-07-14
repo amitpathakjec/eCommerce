@@ -46,7 +46,7 @@ public class DataSeeder implements CommandLineRunner {
         phone.setName("Smartphone");
         phone.setDescription("A modern Android smartphone");
         phone.setPrice(new BigDecimal("30000"));
-        phone.setImageUrl("http://example.com/smartphone.jpg");
+        phone.setImageUrl("https://placehold.co/600x400/png");
         phone.setStockQuantity(10);
         phone.setCategory(savedElectronics);
 
@@ -54,7 +54,7 @@ public class DataSeeder implements CommandLineRunner {
         laptop.setName("Laptop");
         laptop.setDescription("Powerful laptop for work and play");
         laptop.setPrice(new BigDecimal("99000"));
-        laptop.setImageUrl("http://example.com/laptop.jpg");
+        laptop.setImageUrl("https://placehold.co/600x400/png");
         laptop.setStockQuantity(5);
         laptop.setCategory(savedElectronics);
 
@@ -63,7 +63,7 @@ public class DataSeeder implements CommandLineRunner {
         tshirt.setName("T-Shirt");
         tshirt.setDescription("100% Cotton T-Shirt");
         tshirt.setPrice(new BigDecimal("1999"));
-        tshirt.setImageUrl("http://example.com/tshirt.jpg");
+        tshirt.setImageUrl("https://placehold.co/600x400/png");
         tshirt.setStockQuantity(20);
         tshirt.setCategory(savedClothing);
 
@@ -71,7 +71,7 @@ public class DataSeeder implements CommandLineRunner {
         jeans.setName("Jeans");
         jeans.setDescription("Comfort fit blue jeans");
         jeans.setPrice(new BigDecimal("3999"));
-        jeans.setImageUrl("http://example.com/jeans.jpg");
+        jeans.setImageUrl("https://placehold.co/600x400/png");
         jeans.setStockQuantity(15);
         jeans.setCategory(savedClothing);
 
@@ -80,7 +80,7 @@ public class DataSeeder implements CommandLineRunner {
         novel.setName("Novel");
         novel.setDescription("Bestselling fiction novel");
         novel.setPrice(new BigDecimal("499"));
-        novel.setImageUrl("http://example.com/novel.jpg");
+        novel.setImageUrl("https://placehold.co/600x400/png");
         novel.setStockQuantity(25);
         novel.setCategory(savedBooks);
 
@@ -88,7 +88,7 @@ public class DataSeeder implements CommandLineRunner {
         guide.setName("Study Guide");
         guide.setDescription("Helpful guide for exam preparation");
         guide.setPrice(new BigDecimal("899"));
-        guide.setImageUrl("http://example.com/guide.jpg");
+        guide.setImageUrl("https://placehold.co/600x400/png");
         guide.setStockQuantity(30);
         guide.setCategory(savedBooks);
 

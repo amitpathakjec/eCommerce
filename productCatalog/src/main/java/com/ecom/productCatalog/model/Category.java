@@ -1,18 +1,13 @@
 package com.ecom.productCatalog.model;
+
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-
+import lombok.*;
 import java.util.List;
 
-@Setter
-@Getter
 @Entity
-@NoArgsConstructor
-@AllArgsConstructor
+@Getter
+@Setter
+@RequiredArgsConstructor
 @Table(name = "categories")
 public class Category {
 
@@ -23,6 +18,7 @@ public class Category {
 
     // Getter and Setter for products
     @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ToString.Exclude
     private List<Product> products;
 
     // Optional: toString method

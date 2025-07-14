@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    background: #f0f2f5;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+.nav-bar {
+    background: #1877f2;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+.site-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+}
+.nav-link {
+    color: #fff;
+    margin-left: 22px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.15s;
+}
+.nav-link:hover {
+    color: #42b72a;
+    text-decoration: underline;
+}
+.container {
+    max-width: 950px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 32px 36px;
+    box-shadow: 0 5px 30px rgba(24,119,242,0.08);
+}
+h2 {
+    color: #1877f2;
+    font-size: 1.6rem;
+    margin-bottom: 26px;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: flex-start;
+}
+.product-card {
+    width: 260px;
+    background: #f5f6fa;
+    border-radius: 7px;
+    box-shadow: 0 1.5px 7px rgba(66,183,42,0.07);
+    padding: 19px 17px 12px 17px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.product-info h3 {
+    font-size: 1.2rem;
+    color: #1c1e21;
+    margin: 0 0 7px 0;
+}
+.product-info p {
+    color: #444;
+    margin: 0 0 12px 0;
+    font-size: 0.98rem;
+}
+.category {
+    color: #42b72a;
+    font-size: 0.97rem;
+    margin-bottom: 6px;
+}
+.price {
+    color: #1877f2;
+    font-weight: 700;
+    font-size: 1.09rem;
+    margin-bottom: 8px;
+}
+.product-actions {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+}
+.action-btn {
+    background: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.13s;
+}
+.action-btn:hover {
+    background: #1459b3;
+}
+.wish-btn {
+    background: #42b72a;
+}
+.wish-btn:hover {
+    background: #36a420;
+}
+@media (max-width: 800px) {
+    .container {
+        padding: 20px 5vw;
+    }
+    .product-list {
+        justify-content: center;
+    }
+    .product-card {
+        width: 90vw;
+        max-width: 340px;
+    }
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 9px;
+        padding: 14px 7vw;
+    }
+}

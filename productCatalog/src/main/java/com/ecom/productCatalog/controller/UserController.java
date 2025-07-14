@@ -22,7 +22,7 @@ public class UserController {
             @RequestBody User updatedUser,
             @AuthenticationPrincipal UserDetails userDetails) {
 
-        // Only allow update if authenticated as that user or is ADMIN
+        // Allow update if current user is the target user or is ADMIN
         if (!userService.canModifyUser(id, userDetails)) {
             return ResponseEntity.status(403).body("Forbidden");
         }
@@ -40,7 +40,7 @@ public class UserController {
             @PathVariable Long id,
             @AuthenticationPrincipal UserDetails userDetails) {
 
-        // Only allow delete if authenticated as that user or is ADMIN
+        // Allow delete if current user is the target user or is ADMIN
         if (!userService.canModifyUser(id, userDetails)) {
             return ResponseEntity.status(403).body("Forbidden");
         }
